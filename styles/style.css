@@ -1,0 +1,52 @@
+#background{
+    background-color: black;
+    color: white;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Audiowide&display=swap');
+.cyberpunk-title {
+                font-family: 'Orbitron', 'Arial Black', Arial, sans-serif; 
+                font-size: 4rem; 
+                color: #00fff7; 
+                text-shadow: 0 0 10px #00fff7, 0 0 20px #ff00ea, 0 0 40px #00fff7; 
+                letter-spacing: 4px; background: linear-gradient(90deg, #00fff7 0%, #ff00ea 100%); 
+                -webkit-background-clip: text; 
+                -webkit-text-fill-color: transparent; 
+                filter: brightness(1.2);
+            }
+           
+#pfp:hover {
+        border: 4px solid transparent;
+        box-shadow: 0 0 15px 4px #ff6ec7,
+        0 0 30px 8px #6ecbff;
+            }
+@font-face {
+    font-family: 'CyberpunkWaifus';
+    src: url('/fonts/CyberpunkWaifus.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Digipixel';
+    src: url('/fonts/Digipixel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#link {
+    font-family: 'CyberpunkWaifus', monospace, sans-serif;
+}
+
+#discord {
+    color: cyan;
+    text-shadow: 0 0 10px #00fff7, 0 0 20px #ff00ea, 0 0 40px #00fff7; 
+    font-family: 'Digipixel', monospace, sans-serif;
+}
+
+#banner{
+        border: 4px solid transparent;
+        box-shadow: 0 0 15px 4px #ff6ec7,
+        0 0 30px 8px #6ecbff;
+}
