@@ -50,3 +50,98 @@
         box-shadow: 0 0 15px 4px #ff6ec7,
         0 0 30px 8px #6ecbff;
 }
+
+
+.tg-card {
+  display: flex;
+  align-items: center;
+  background: #1d1d1d;
+  color: white;
+  border-radius: 12px;
+  padding: 16px 24px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.tg-avatar-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.tg-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #229ED9;
+  position: relative;
+  z-index: 2;
+}
+
+/* Sparkle base style */
+.sparkle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,0,255,1) 0%, rgba(0,255,255,1) 100%);
+  opacity: 0.8;
+  animation: sparkle-blast 1.5s infinite ease-out;
+  z-index: 1;
+}
+
+/* Random sparkle positions and delays */
+.s1 { top: 30%; left: 30%; animation-delay: 0s; }
+.s2 { top: 10%; left: 80%; animation-delay: 0.2s; }
+.s3 { top: 70%; left: 60%; animation-delay: 0.4s; }
+.s4 { top: 20%; left: 10%; animation-delay: 0.6s; }
+.s5 { top: 90%; left: 40%; animation-delay: 0.8s; }
+.s6 { top: 50%; left: 90%; animation-delay: 1s; }
+
+@keyframes sparkle-blast {
+  0% {
+    transform: scale(0.5) translate(0, 0);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.5) translate(10px, -10px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.3) translate(-15px, 15px);
+    opacity: 0;
+  }
+}
+
+.tg-details h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.tg-details p {
+  margin: 4px 0 12px;
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.tg-button {
+  background-color: #229ED9;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.tg-button:hover {
+  background-color: #1b8dbf;
+}
